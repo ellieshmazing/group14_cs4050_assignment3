@@ -3,7 +3,7 @@ package assignment.dictionary;
 /** 
  * 
  * An implementation of the ADT Dictionary that adapts (uses a private instance) of 
- * the Hashtahash class from Java 
+ * the Hashtable class from Java
  * 
  * Mostly the adaption consists of making calling the appropriate method of the
  * MyHashTable class.
@@ -79,10 +79,7 @@ public class HashedMapAdaptor<K,V> implements DictionaryInterface<K,V>,
     /** Creates an iterator that traverses all values in this dictionary.
     @return An iterator that provides sequential access to the values
     in this dictionary. */
-    public Iterator<V> getValueIterator()
-    {
-        return myTable.values().iterator();
-    }    
+    public Iterator<V> getValueIterator() { return myTable.values().iterator(); }
     
     /** Sees whether this dictionary is empty.
     @return True if the dictionary is empty. */

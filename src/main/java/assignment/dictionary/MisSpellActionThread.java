@@ -65,6 +65,7 @@ public class MisSpellActionThread implements Runnable {
     public void loadDictionary(String theFileName, DictionaryInterface<String, String> theDictionary) {
         Scanner input;
         try {
+            throw new IOException("REMOVE THIS IS JUST FOR TEST");
 // ADD CODE HERE
 // >>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -88,7 +89,8 @@ public class MisSpellActionThread implements Runnable {
     public void checkWords(String theFileName, DictionaryInterface<String, String> theDictionary) {
         Scanner input;
         try {
- 
+            throw new IOException("REMOVE THIS IS JUST FOR TEST");
+
 // ADD CODE HERE
 // >>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
