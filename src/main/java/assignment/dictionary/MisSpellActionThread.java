@@ -63,20 +63,20 @@ public class MisSpellActionThread implements Runnable {
      * @param theDictionary The dictionary to load.
      */
     public void loadDictionary(String theFileName, DictionaryInterface<String, String> theDictionary) {
-        Scanner input;
-        try {
-            throw new IOException("REMOVE THIS IS JUST FOR TEST");
-// ADD CODE HERE
-// >>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        File file = new File(theFileName);
+
+        try(Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNextLine()) {
+                String word = scanner.nextLine().trim();
 
 
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-         
-
-
+                theDictionary.add(word, word);
+            }
+            dictionaryLoaded = true;
         } catch (IOException e) {
             System.out.println("There was an error in reading or opening the file: " + theFileName);
             System.out.println(e.getMessage());
+            dictionaryLoaded = false;
         }
 
     }
