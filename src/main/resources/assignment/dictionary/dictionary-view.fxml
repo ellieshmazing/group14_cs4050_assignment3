@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.ScrollPane?>
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment.dictionary.DictionaryController">
    <children>
       <VBox prefHeight="398.0" prefWidth="712.0">
@@ -24,11 +25,13 @@
                      </font></Label>
                </children>
             </HBox>
-            <VBox fx:id="view" prefHeight="310.0" prefWidth="498.0">
-               <VBox.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
-               </VBox.margin>
-            </VBox>
+            <ScrollPane fitToWidth="true" fitToHeight="true">
+               <VBox fx:id="view" prefHeight="310.0" prefWidth="498.0">
+                  <VBox.margin>
+                     <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+                  </VBox.margin>
+               </VBox>
+            </ScrollPane>
          </children>
       </VBox>
    </children>

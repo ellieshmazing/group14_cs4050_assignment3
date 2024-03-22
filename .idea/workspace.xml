@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bd28780-774c-44ea-9732-bfa59cdbd3aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/assignment/dictionary/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/group14_cs4050_assignment3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/dictionary/LinesToDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/dictionary/LinesToDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/dictionary/MisSpellActionThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/dictionary/MisSpellActionThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/assignment/dictionary/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assignment/dictionary/MyHashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assignment/dictionary/dictionary-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assignment/dictionary/dictionary-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assignment/dictionary/LinesToDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/dictionary/LinesToDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assignment/dictionary/MisSpellActionThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/dictionary/MisSpellActionThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assignment/dictionary/MyHashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/dictionary/MyHashTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assignment/dictionary/dictionary-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assignment/dictionary/dictionary-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,28 +38,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Dictionary.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SpellChecker.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ellie/Desktop/Spring 2024/Algorithms/group14_cs4050_assignment3/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Dictionary.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.SpellChecker.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Atul/4050/assignment3/group14_cs4050_assignment3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ellie\Desktop\Spring 2024\Algorithms\group14_cs4050_assignment3" />
@@ -71,7 +72,6 @@
     <attachedChunks>
       <set>
         <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
       </set>
     </attachedChunks>
   </component>
@@ -88,10 +88,21 @@
       <workItem from="1710435893936" duration="1233000" />
       <workItem from="1710607436572" duration="12618000" />
       <workItem from="1711035790500" duration="587000" />
+      <workItem from="1711135520846" duration="5192000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

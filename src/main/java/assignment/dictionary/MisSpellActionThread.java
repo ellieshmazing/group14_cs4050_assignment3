@@ -87,18 +87,20 @@ public class MisSpellActionThread implements Runnable {
      *
      */
     public void checkWords(String theFileName, DictionaryInterface<String, String> theDictionary) {
-        Scanner input;
-        try {
-            throw new IOException("REMOVE THIS IS JUST FOR TEST");
+        File file = new File(theFileName);
+        try (Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine().trim();
+                String[] words = line.split("(?<=\\W)|(?=\\W)");
 
-// ADD CODE HERE
-// >>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-
+                for (String word : words) {
+                    boolean correct = !word.matches("[a-zA-Z]+") || checkWord(word, theDictionary);
+                    Wordlet wordlet = new Wordlet(word, correct); // Assuming Wordlet has a constructor like this
+                    myLines.addWordlet(wordlet);
+                }
+                showLines(myLines);
+                myLines.nextLine();
+            }
         } catch (IOException e) {
             System.out.println("There was an error in reading or opening the file: " + theFileName);
             System.out.println(e.getMessage());
@@ -111,15 +113,7 @@ public class MisSpellActionThread implements Runnable {
      *
      */
     public boolean checkWord(String word, DictionaryInterface<String, String> theDictionary) {
-        boolean result = false;
-
-        // ADD CODE HERE
-//>>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        
-
-
-
-
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        boolean result = theDictionary.contains(word);
 
         return result;
 
@@ -127,7 +121,7 @@ public class MisSpellActionThread implements Runnable {
 
     private void showLines(LinesToDisplay lines) {
         try {
-            Thread.sleep(500);
+            Thread.sleep(5);
             Platform.runLater(() -> {
                 if (myLines != null) {
                     controller.UpdateView(lines);

@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 public class LinesToDisplay {
 
-    public static final int LINES = 10;     // Display 10 lines
+    public static final int LINES = 20;     // Display 20 lines
     private AList<Wordlet>[] lines;
     private int currentLine;
 
@@ -65,20 +65,19 @@ public class LinesToDisplay {
 
     //This function increments the line count if current line count exceeds the limit
     public void nextLine() {
-
         currentLine++;
-
-        if (currentLine >= LINES) {
-            //shifting the lines up by one
+        if (currentLine >= lines.length) {
+            // Manually shifting the lines up by one.
             for (int i = 0; i < LINES - 1; i++) {
                 lines[i] = lines[i + 1];
             }
-            //adding new list in the last line
+            // Create a new list for the last line.
             lines[LINES - 1] = new AList<>();
 
             currentLine = LINES - 1;
-            currentCharCount = 0;
         }
+        // Reset character count for the new line
+        currentCharCount = 0;
     }
 
     public int getCurrentLine(){

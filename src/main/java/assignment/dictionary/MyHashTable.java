@@ -35,7 +35,9 @@ public class MyHashTable<K,V>
     //Function to get hash location from @value.
     //Uses Object's hashCode() method to handle type issues. Modulo limits range to the capacity of the hashtable.
     private int hash(Object key){
-       return key.hashCode() % capacity;
+        int hc = key.hashCode();
+        return (hc & 0x7fffffff) % capacity;
+//       return key.hashCode() % capacity;
     }
 
     //Function to add new value to hashtable.
@@ -117,7 +119,7 @@ public class MyHashTable<K,V>
         //Search until desired key is found or lack of inclusion is certain
         while(table[index] != null){
             //Return if found
-            if (table[index] == key)
+            if (table[index].equals(key))
             {
                 return true;
             }
